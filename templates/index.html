@@ -17,29 +17,26 @@
             html, body {
                 padding: 0px;
                 margin: 0px;
-                background: url('static/tet_back.png');
+                /* background: url('https://i.pinimg.com/originals/17/f8/12/17f812d2231a12317e8ce9d2836949b5.jpg');
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
                 height: 100%;
-                overflow-x: scroll;
+                overflow-x: scroll; */
+                background-image: url('https://i.pinimg.com/originals/17/f8/12/17f812d2231a12317e8ce9d2836949b5.jpg');
             }
 
         .header {
             background-color: rgba(0, 0, 0, 0.3);
             font-weight: bold;
-            text-transform: uppercase;
+            /* text-transform: uppercase; */
             font-size: large;
             color:white;
 
             text-align: center;
             padding: 30px;
         }
-        .footer
-        {
-
-        }
-
+      
         .info
         {
             text-align:left;
@@ -49,7 +46,6 @@
             padding:20px;
             font-size:14px;
         }
-
 
         .content {
             width: 100%;
@@ -91,36 +87,27 @@
         }
 
         .result_id {
+            color:whitesmoke;
             padding: 10px;
             margin: 15px;
             font-size: 16px;
 
         }
 
-        .result_id_number {
-            margin: 15px;
-            padding: 10px;
-            padding-left: 15px;
-            padding-right: 15px;
-            background-color: #FEED06;
-            color: black;
-            font-weight: bold;
-            font-size: 18px;
-            border-radius: 5px;
-
-        }
+        
 
     </style>
 </head>
 
 <body>
 <div class='header'>
-    THẦY BÓI MÌ AI XEM BÓI MIỄN PHÍ ĐẦU NĂM
+    <!-- THẦY BÓI MÌ AI XEM BÓI MIỄN PHÍ ĐẦU NĂM -->
+    Dự đoán địa danh nổi tiếng của 3 nơi : Thành Phồ Hồ Chí Minh , Phú Yên , Ninh Thuận
 </div>
 <div class='content'>
 
     <div class='upload_part'>
-        <button class='upload_button' id="upload_button">Chọn file ảnh có 01 khuôn mặt nhìn thẳng...</button>
+        <button class='upload_button' id="upload_button">Chọn file ảnh mà bạn muốn dự đoán </button>
         <div class='upload_hint' id='upload_hint'>
                 Các định dạng được hỗ trợ: PNG, JPG và JPEG.
         </div>
@@ -131,22 +118,15 @@
 
     <div class='result_part'>
         {% if msg %}
-        <div class='result_title'><b>Kết quả xem bói khuôn mặt bạn</b></div>
+        <div class='result_title'><b>Kết quả là :  </div>
         <div class='result_id'>{{ msg }}</div>
         {% endif %}
-        {% if hasface %}
-        <div class='result_id'>Bạn có khuôn mặt: <span class='result_id_number'>{{ result }}</span></div>
-        {% endif %}
         {% if user_image %}
-        <img style="max-width:160px; border-radius:1rem" src="{{ url_for('static', filename=user_image) }}?{{ rand }}"
-             alt="User Image">
+        <img src="{{url_for('static', filename=user_image)}}">
         {% endif %}
-        
-    </div>
-</div>
-<div class='footer'>
+       
+    </div></div>
 
-</div>
 
 </body>
 <script>
