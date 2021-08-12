@@ -1,7 +1,6 @@
 import pickle
 from flask import Flask, render_template, request
 import os
-from random import random
 import cv2
 import  sys
 from tensorflow.keras.applications.vgg16 import VGG16
