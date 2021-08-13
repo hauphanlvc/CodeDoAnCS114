@@ -4,12 +4,12 @@ import os
 from random import random
 import cv2
 import  sys
-from tensorflow.keras.applications.vgg16 import VGG16
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.applications.vgg16 import preprocess_input
 import numpy as np  
 from keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img  
 def TrichXuatFeatures(file):
+  from tensorflow.keras.applications.vgg16 import VGG16
+  from tensorflow.keras.preprocessing import image
+  from tensorflow.keras.applications.vgg16 import preprocess_input
   model_VGG16 = VGG16(weights='imagenet', include_top=False)
   from keras.preprocessing.image import img_to_array, load_img  
   img = image.load_img(file, target_size=(224, 224)) # chuyển ảnh về size (224,224)
