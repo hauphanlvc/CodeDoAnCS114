@@ -3,6 +3,7 @@
 ## Đầu tiên bật terminal hoặc cmd bên Windows , sau đó chạy lệnh dưới này :
 ```
 git clone https://github.com/hauphanlvc/CodeDoAnCS114.git
+cd CodeDoAnCS114
 ```
 ## sau đó ,tạo môi trường ảo bằng lệnh này :
 
