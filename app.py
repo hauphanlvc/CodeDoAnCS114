@@ -56,10 +56,12 @@ def home_page():
                 res = DuDoan1AnhVGG16(model_,path_to_save)
                 print(image_.filename)
                 # return render_template("index.html", user_image = image.filename , result = res)
-                
+                return render_template("index.html",  msg = str(res[0]),user_image = image_.filename)
         
+            
             print("Save = ", path_to_save)
             image_.save(path_to_save)                                        
+            res = DuDoan1AnhVGG16(model_,path_to_save)
             return render_template("index.html",  msg = str(res[0]),user_image = image_.filename)
 
 
