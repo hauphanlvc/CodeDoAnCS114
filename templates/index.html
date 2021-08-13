@@ -8,7 +8,7 @@
             padding: 0px;
             margin: 0px;
             font-family: Arial, Helvetica, sans-serif;
-            color:white;
+            color:rgb(158, 47, 47);
         }
 
         body, html {
@@ -17,30 +17,31 @@
             html, body {
                 padding: 0px;
                 margin: 0px;
-                /* background: url('https://i.pinimg.com/originals/17/f8/12/17f812d2231a12317e8ce9d2836949b5.jpg');
-                background-position: center;
-                background-repeat: no-repeat;
+                /* /* background: url('https://i.pinimg.com/originals/17/f8/12/17f812d2231a12317e8ce9d2836949b5.jpg'); */
+                /* background-position: center; */
+                /* background-repeat: no-repeat; */
                 background-size: cover;
                 height: 100%;
-                overflow-x: scroll; */
-                background-image: url('https://i.pinimg.com/originals/17/f8/12/17f812d2231a12317e8ce9d2836949b5.jpg');
+                overflow-x: scroll; 
+                /* background-image: url('https://i.pinimg.com/originals/17/f8/12/17f812d2231a12317e8ce9d2836949b5.jpg'); */
+                background-image: url('http://www.click-convert.co.uk/wp-content/uploads/2018/08/Machine-Learning.png');
             }
 
         .header {
-            background-color: rgba(0, 0, 0, 0.3);
+            /* background-color: rgba(0, 0, 0, 0.3); */
             font-weight: bold;
             /* text-transform: uppercase; */
-            font-size: large;
-            color:white;
-
+            font-size: 40px;
+            color:orange;
+          
             text-align: center;
-            padding: 30px;
+            padding: 90px;
         }
       
         .info
         {
             text-align:left;
-            color:gray;
+            color:rgb(189, 236, 128);
             width:30%;
             margin:auto;
             padding:20px;
@@ -52,7 +53,7 @@
         }
 
         .upload_part {
-            background-color: rgba(0, 0, 0, 0.3);
+            /* background-color: rgba(0, 0, 0, 0.3); */
             text-align: center;
             padding: 40px;
         }
@@ -70,11 +71,12 @@
             cursor: pointer;
         }
 
-        .upload_hint {
+        /* .upload_hint {
             margin: 10px;
-            font-size: 14px;
-            color: rgb(200, 200, 200);
-        }
+            font-size: 20px;
+            color: rgb(228, 228, 44);
+            background-color: #FEED06;
+        } */
 
         .result_part {
             text-align: center;
@@ -108,9 +110,9 @@
 
     <div class='upload_part'>
         <button class='upload_button' id="upload_button">Chọn file ảnh mà bạn muốn dự đoán </button>
-        <div class='upload_hint' id='upload_hint'>
+        <!-- <div class='upload_hint' id='upload_hint'>
                 Các định dạng được hỗ trợ: PNG, JPG và JPEG.
-        </div>
+        </div> -->
         <form action="/" method="POST" enctype="multipart/form-data" id='form'>
             <input type="file" name="file" id="fileinput" style="display: none;" accept="image/*">
         </form>
