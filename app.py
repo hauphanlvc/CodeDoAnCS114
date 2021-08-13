@@ -38,7 +38,7 @@ model_ = pickle.load(open(filename, 'rb'))
 
 
 # Hàm xử lý request
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/", methods=['POST'])
 def home_page():
     # Nếu là POST (gửi file)
     if request.method == "POST":
