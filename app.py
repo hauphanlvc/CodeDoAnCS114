@@ -1,3 +1,4 @@
+from gevent.pywsgi import WSGIServer
 import pickle
 from flask import Flask, render_template, request
 from random import random
@@ -71,6 +72,8 @@ def home_page():
 
 if __name__ == '__main__':
 #     app.run(host='0.0.0.0', debug=True)
-    # app.run()
+    app.run()
       # app.run(host="0.0.0.0")
-    app.run(debug=True,host='0.0.0.0', port=9007)
+    # app.run(debug=True,host='0.0.0.0', port=9007)
+  # http_server = WSGIServer(('', 5000), app)
+  # http_server.serve_forever()
