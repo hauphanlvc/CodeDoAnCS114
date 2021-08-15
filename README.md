@@ -1,4 +1,4 @@
-# CodeDoAnCS114
+# Mã nguồn ứng dụng
 # CS114.L21AndCS114.L22.KHCL
 
 ## - Thành viên  :
