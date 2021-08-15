@@ -2,7 +2,6 @@ import pickle
 from flask import Flask, render_template, request
 import os
 from random import random
-import cv2
 import  sys
 import numpy as np  
 from keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img  
