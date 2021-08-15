@@ -1,8 +1,8 @@
 import pickle
 from flask import Flask, render_template, request
-import os
 from random import random
 import  sys
+import os
 import numpy as np  
 from keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img  
 def TrichXuatFeatures(file):
