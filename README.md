@@ -15,7 +15,7 @@
 ## Tiếp đó ,ta tạo môi trường ảo bằng lệnh này :
 
 ```python
-    virtualenv -p /usr/bin/python3 venv    
+    python -m virtualenv venv   
     source venv/bin/activate
 ```
 
